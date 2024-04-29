@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-modal">
+      <div class="modal">
+        <div class="cancel">X</div>
+        <div class="inputData">
+          <div class="nama">
+            <label for="nama">Nama Catatan</label>
+            <input type="text" name="nama" id="nama" />
+          </div>
+          <button class="simpan" onclick="tambahData()">Simpan</button>
+        </div>
+      </div>
+    </div>
+    <center>
+      <h1 style="padding-top: 40px">Note App</h1>
+    </center>
+
+    <div class="bukuTulis">
+      <hr />
+    </div>
+    <center>
+      <button class="clear">Bersihkan Catatan</button>
+      <button class="add">Tambah Catatan</button>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>

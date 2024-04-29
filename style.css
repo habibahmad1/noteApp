@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+}
+
+hr {
+  margin: 40px 530px;
+}
+
+.isiNote {
+  position: relative;
+  padding-top: 15px;
+  list-style-type: none;
+  text-align: center;
+  line-height: 15px;
+  height: 30px;
+  font-size: 24px;
+  color: black;
+}
+
+.add {
+  display: inline;
+  margin: auto;
+  background-color: #00a6ff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.clear {
+  display: inline;
+  margin: auto;
+  background-color: #df4040;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.add:hover {
+  background-color: #0269a0;
+}
+
+.container-modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 998;
+}
+
+.modal {
+  background-color: white;
+  display: flex;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -16px;
+  top: -16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.simpan {
+  display: flex;
+  background-color: #ffa514;
+  padding: 10px 135px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.nama {
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input {
+  width: 300px;
+  border: 2px solid #ffa514;
+  margin: 20px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.delete {
+  width: 100px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+@media (max-width: 1000px) {
+  hr {
+    margin: 40px auto;
+  }
+  .modal {
+    width: 400px;
+  }
+}
