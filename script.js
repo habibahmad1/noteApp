@@ -58,3 +58,9 @@ function tambahData() {
     inputData.value = "";
   }
 }
+
+// Peringatan Refresh
+window.addEventListener('beforeunload', function(event) {
+  event.preventDefault();
+  return "Yakin?";
+});
